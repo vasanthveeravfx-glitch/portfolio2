@@ -508,6 +508,7 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   const checkScroll = () => {
     if (scrollRef.current) {
@@ -531,6 +532,25 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
       return () => el.removeEventListener('scroll', checkScroll);
     }
   }, []);
+
+  // Auto-slide functionality
+  useEffect(() => {
+    if (!isInView || isHovered || !canScrollRight) return;
+    
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        if (scrollLeft >= scrollWidth - clientWidth - 5) {
+          // Reset to beginning
+          scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+        }
+      }
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [isInView, isHovered, canScrollRight]);
 
   const cardBg = theme === 'dark'
     ? 'bg-white/[0.03] border-white/5 hover:border-white/10'
@@ -607,7 +627,13 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
       </div>
 
       {/* Horizontal Scroll */}
-      <div ref={scrollRef} className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory" style={{ scrollbarWidth: 'none' }}>
+      <div 
+        ref={scrollRef} 
+        className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory" 
+        style={{ scrollbarWidth: 'none' }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {company.shows.map((show, i) => {
           const img = SHOW_IMAGES[show.name];
           return (
