@@ -390,16 +390,17 @@ function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://image.tmdb.org/t/p/original/pgxGAuXb2n8KAg7MQNPgriX7Gy.jpg"
+          src="/vfx-bg.jpg"
           alt=""
           className="w-full h-full object-cover"
           style={{
             transform: `scale(1.15) translate(${mousePos.x * -15}px, ${mousePos.y * -15}px)`,
-            filter: theme === 'light' ? 'brightness(1.2)' : 'brightness(0.5)'
+            filter: theme === 'light' ? 'brightness(1.2)' : 'brightness(0.4)',
+            blendMode: theme === 'dark' ? 'overlay' : 'normal'
           }}
         />
         <div className={`absolute inset-0 ${theme === 'dark'
-          ? 'bg-gradient-to-b from-black/70 via-black/50 to-black'
+          ? 'bg-gradient-to-b from-black/80 via-black/60 to-black'
           : 'bg-gradient-to-b from-white/70 via-white/50 to-white'
         }`} />
         <div className={`absolute inset-0 ${theme === 'dark'
