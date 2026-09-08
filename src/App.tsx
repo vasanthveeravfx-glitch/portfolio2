@@ -327,8 +327,8 @@ function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className={`${textColor} font-bold text-xl tracking-wider flex items-center gap-1`}>
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">VV</span>
-          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>STUDIOS</span>
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">VASANTH VEERA</span>
+          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>POERFOLIO</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
