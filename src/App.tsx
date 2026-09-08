@@ -208,61 +208,61 @@ const ALL_FILMS = [
 ];
 
 const SHOW_IMAGES: Record<string, string> = {
-  // MPC Films - Real Movie Posters from TMDB
-  'Mufasa: The Lion King': 'https://image.tmdb.org/t/p/w500/jbOSUAWMGzGL1L4EaUF8K6zYFo7.jpg',
-  'The Little Mermaid': 'https://image.tmdb.org/t/p/w500/ym7dYwbAhHfQKMBGqjdBdQhE8XZ.jpg',
-  'Pinocchio': 'https://image.tmdb.org/t/p/w500/vx1u0uwxdlhV2MUzj4VlcERplag.jpg',
-  'Godzilla vs. Kong': 'https://image.tmdb.org/t/p/w500/pgxGAuXb2n8KAg7MQNPgriX7Gy.jpg',
-  'Sonic The Hedgehog 2': 'https://image.tmdb.org/t/p/w500/6DrHO1jr3qVrViUke6vHk50M7Dk.jpg',
-  'Finch': 'https://image.tmdb.org/t/p/w500/x7xMMyQxJz0JMBe0bXbYnGkN0Fh.jpg',
-  'The Call of the Wild': 'https://image.tmdb.org/t/p/w500/wj12gfhYfMz2BkK0e4dLp9VlC3q.jpg',
-  'Artemis Fowl': 'https://image.tmdb.org/t/p/w500/n3wqqBLUi3Q0e3GEjWpXbDq0kGv.jpg',
-  'Maleficent: Mistress of Evil': 'https://image.tmdb.org/t/p/w500/xM8rKTrJ1e0hGqMbOdaTq8VCQJr.jpg',
-  'Dumbo': 'https://image.tmdb.org/t/p/w500/279LwXaJmUl3BGDZObPqVA64bWW.jpg',
-  'Dolittle': 'https://image.tmdb.org/t/p/w500/zzXGRiJY8hBMFpKQJXyB2VdZfQk.jpg',
-  'Dark Phoenix': 'https://image.tmdb.org/t/p/w500/hL3sZJX9gpBnBTfVgFBVmQqVWfQ.jpg',
-  'Godzilla: King of the Monsters': 'https://image.tmdb.org/t/p/w500/x4So4OkqnBOSMFckEjO0gVHObvi.jpg',
+  // MPC Films - Real Movie Posters (Local Files)
+  'Mufasa: The Lion King': '/posters/mufasa.jpg',
+  'The Little Mermaid': '/posters/little_mermaid.jpg',
+  'Pinocchio': '/posters/pinocchio.jpg',
+  'Godzilla vs. Kong': '/posters/godzilla_vs_kong.jpg',
+  'Sonic The Hedgehog 2': '/posters/sonic2.jpg',
+  'Finch': '/posters/finch.jpg',
+  'The Call of the Wild': '/posters/call_of_wild.jpg',
+  'Artemis Fowl': '/posters/artemis_fowl.jpg',
+  'Maleficent: Mistress of Evil': '/posters/maleficent2.jpg',
+  'Dumbo': '/posters/dumbo.jpg',
+  'Dolittle': '/posters/dolittle.jpg',
+  'Dark Phoenix': '/posters/dark_phoenix.jpg',
+  'Godzilla: King of the Monsters': '/posters/godzilla_king_monsters.jpg',
   
   // DNEG Hollywood
-  'Wonder Woman': 'https://image.tmdb.org/t/p/w500/imekS7f1uHy4FCfRPXlZAC0LTGg.jpg',
-  'Kong: Skull Island': 'https://image.tmdb.org/t/p/w500/r2517Vc9E0r8elPj0yGAYLmgGG7.jpg',
-  'Fantastic Beasts': 'https://image.tmdb.org/t/p/w500/h6NYfV3SKMpJ5e0P1yGAYLmgGG7.jpg',
-  'Ghost in the Shell': 'https://image.tmdb.org/t/p/w500/myB2ZVSR0VXlPBYQnz5g1VwIYhC.jpg',
-  'Beauty and the Beast': 'https://image.tmdb.org/t/p/w500/lNevJBp9bKjQrxnkHg2aQ1fdTZd.jpg',
-  'Suicide Squad': 'https://image.tmdb.org/t/p/w500/Fq3bzHpmhPjZDm0MUvFjO7RlCa.jpg',
-  'Transformers': 'https://image.tmdb.org/t/p/w500/sA5MzJhGR3Qa7fBmiWjemKc4Q9p.jpg',
-  'Legend of Tarzan': 'https://image.tmdb.org/t/p/w500/4xYZP5G9sI9VqMTFkFESzQ3q3Qk.jpg',
-  'TMNT': 'https://image.tmdb.org/t/p/w500/fb3Fsb7FbpZ3vB0e7OdjReVfTQk.jpg',
-  'The Great Wall': 'https://image.tmdb.org/t/p/w500/hm0Z5bfMdCg3DV6oq2DURQJqApX.jpg',
+  'Wonder Woman': '/posters/wonder_woman.jpg',
+  'Kong: Skull Island': '/posters/kong_skull_island.jpg',
+  'Fantastic Beasts': '/posters/fantastic_beasts.jpg',
+  'Ghost in the Shell': '/posters/ghost_in_shell.jpg',
+  'Beauty and the Beast': '/posters/beauty_beast.jpg',
+  'Suicide Squad': '/posters/suicide_squad.jpg',
+  'Transformers': '/posters/transformers.jpg',
+  'Legend of Tarzan': '/posters/legend_tarzan.jpg',
+  'TMNT': '/posters/tmnt.jpg',
+  'The Great Wall': '/posters/great_wall.jpg',
   
   // DNEG Indian
-  'Ae Dil Hai Mushkil': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
-  'Kaabil': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
-  'Udta Punjab': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
-  'Raabta': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
-  'Tubelight': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
-  'Mom': 'https://image.tmdb.org/t/p/w500/hlDOF4UhUqrYY7gqLk3Rl0Fx4ns.jpg',
+  'Ae Dil Hai Mushkil': '/posters/ae_dil_hai_mushkil.jpg',
+  'Kaabil': '/posters/ae_dil_hai_mushkil.jpg',
+  'Udta Punjab': '/posters/ae_dil_hai_mushkil.jpg',
+  'Raabta': '/posters/ae_dil_hai_mushkil.jpg',
+  'Tubelight': '/posters/ae_dil_hai_mushkil.jpg',
+  'Mom': '/posters/ae_dil_hai_mushkil.jpg',
   
   // JustVFX
-  'Wednesday': 'https://image.tmdb.org/t/p/w500/9PFonBhy4cQn7JzAoHF9xUBvOlA.jpg',
-  'FUZ': 'https://image.qwenlm.ai/generated-images/651357d0-b4f4-450e-98a6-74ea787ec29c/_result.png',
-  'Local Productions': 'https://image.qwenlm.ai/generated-images/355921ef-1319-4a43-9d22-1b278fe938a4/_result.png',
+  'Wednesday': '/posters/wednesday.jpg',
+  'FUZ': '/posters/telugu_default.jpg',
+  'Local Productions': '/posters/telugu_default.jpg',
   
   // Gemini FX (Telugu)
-  'Bhale Manchi Roju': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Bhale Magadivoy': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Yevade Subramanyam': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Race Gurram': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Raju Gari Gadhi': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
+  'Bhale Manchi Roju': '/posters/telugu_default.jpg',
+  'Bhale Magadivoy': '/posters/telugu_default.jpg',
+  'Yevade Subramanyam': '/posters/telugu_default.jpg',
+  'Race Gurram': '/posters/telugu_default.jpg',
+  'Raju Gari Gadhi': '/posters/telugu_default.jpg',
   
   // Fire Pixel (Telugu)
-  'Gabbar Singh': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Srimannarayana': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
-  'Paper Dhoni': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
+  'Gabbar Singh': '/posters/telugu_default.jpg',
+  'Srimannarayana': '/posters/telugu_default.jpg',
+  'Paper Dhoni': '/posters/telugu_default.jpg',
   
   // Magiclume CG
-  'Spy Kids 4': 'https://image.tmdb.org/t/p/w500/hm0Z5bfMdCg3DV6oq2DURQJqApX.jpg',
-  'Sri Rama Rajyam': 'https://image.tmdb.org/t/p/w500/2wCaF36obO4LysX0m57h0BKxX27.jpg',
+  'Spy Kids 4': '/posters/great_wall.jpg',
+  'Sri Rama Rajyam': '/posters/telugu_default.jpg',
 };
 
 // ==================== COMPONENTS ====================
@@ -327,8 +327,8 @@ function Navbar() {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className={`${textColor} font-bold text-xl tracking-wider flex items-center gap-1`}>
-          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">VV</span>
-          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>STUDIOS</span>
+          <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">VASANTH VEERA</span>
+          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>POERFOLIO</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
@@ -390,16 +390,17 @@ function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://image.tmdb.org/t/p/original/pgxGAuXb2n8KAg7MQNPgriX7Gy.jpg"
+          src="/vfx-bg.jpg"
           alt=""
           className="w-full h-full object-cover"
           style={{
             transform: `scale(1.15) translate(${mousePos.x * -15}px, ${mousePos.y * -15}px)`,
-            filter: theme === 'light' ? 'brightness(1.2)' : 'brightness(0.5)'
+            filter: theme === 'light' ? 'brightness(1.2)' : 'brightness(0.4)',
+            blendMode: theme === 'dark' ? 'overlay' : 'normal'
           }}
         />
         <div className={`absolute inset-0 ${theme === 'dark'
-          ? 'bg-gradient-to-b from-black/70 via-black/50 to-black'
+          ? 'bg-gradient-to-b from-black/80 via-black/60 to-black'
           : 'bg-gradient-to-b from-white/70 via-white/50 to-white'
         }`} />
         <div className={`absolute inset-0 ${theme === 'dark'
@@ -508,6 +509,7 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   const checkScroll = () => {
     if (scrollRef.current) {
@@ -531,6 +533,25 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
       return () => el.removeEventListener('scroll', checkScroll);
     }
   }, []);
+
+  // Auto-slide functionality
+  useEffect(() => {
+    if (!isInView || isHovered || !canScrollRight) return;
+    
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+        if (scrollLeft >= scrollWidth - clientWidth - 5) {
+          // Reset to beginning
+          scrollRef.current.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          scrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+        }
+      }
+    }, 3000);
+    
+    return () => clearInterval(interval);
+  }, [isInView, isHovered, canScrollRight]);
 
   const cardBg = theme === 'dark'
     ? 'bg-white/[0.03] border-white/5 hover:border-white/10'
@@ -607,7 +628,13 @@ function CompanyShowcase({ company, index }: { company: typeof COMPANIES[0]; ind
       </div>
 
       {/* Horizontal Scroll */}
-      <div ref={scrollRef} className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory" style={{ scrollbarWidth: 'none' }}>
+      <div 
+        ref={scrollRef} 
+        className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory" 
+        style={{ scrollbarWidth: 'none' }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {company.shows.map((show, i) => {
           const img = SHOW_IMAGES[show.name];
           return (
