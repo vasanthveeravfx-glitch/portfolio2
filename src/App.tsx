@@ -328,7 +328,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className={`${textColor} font-bold text-xl tracking-wider flex items-center gap-1`}>
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">VASANTH VEERA</span>
-          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>Vasanth Veera Portfolio</span>
+          <span className={`text-xs font-normal ${subColor} hidden sm:inline`}>POERFOLIO</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
