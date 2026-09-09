@@ -1,16 +1,32 @@
 ```
-# Build artifacts
-dist/
-*.css
-
 # Dependencies
 node_modules/
 
-# Editors
-.vscode/
-
-# Environment
+# Environment variables
 .env
 .env.local
-*.env.*
+.env.*
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Build artifacts
+dist/
+build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
 ```
